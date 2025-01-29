@@ -11316,26 +11316,3 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-svg, svg * {
-  pointer-events: none;
-}
-
-svg .hovers path:hover{
-  visibility:visible;
-}
-
-svg .hovers  path{
-  visibility:hidden;
-  pointer-events:all;
-}
-
-svg .clubs path:hover{
-  fill:lightblue !important;
-}
-
-svg .clubs  path{
-  visibility:visible;
-  pointer-events:all;
-}
-

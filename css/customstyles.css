@@ -1,0 +1,23 @@
+
+svg, svg * {
+    pointer-events: none;
+  }
+  
+  svg .hovers path:hover{
+    visibility:visible;
+  }
+  
+  svg .hovers  path{
+    visibility:hidden;
+    pointer-events:all;
+  }
+  
+  svg .clubs path:hover{
+    fill:lightblue !important;
+  }
+  
+  svg .clubs  path{
+    visibility:visible;
+    pointer-events:all;
+  }
+  

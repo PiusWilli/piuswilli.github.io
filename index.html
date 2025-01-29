@@ -9,12 +9,13 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="ja/fontawesome.all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="css/montserrat.css" rel="stylesheet" type="text/css" />
+        <link href="css/roboto.css" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/customstyles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -478,11 +479,16 @@
      class="clubs"><g
        id="g13"
        style="fill:#008000"
-       transform="translate(-40.463948,-24.778485)"><path
+       transform="translate(-40.463948,-24.778485)"
+       class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+       
+       <path
          style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 42.996052,111.1985 1.901371,1.97369 3.754908,-3.87604 -2.059143,-1.89764 z"
          id="path21066"
-         sodipodi:nodetypes="ccccc" /><path
+         sodipodi:nodetypes="ccccc" class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1"/>
+         
+         <path
          style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 46.512437,111.43605 1.049761,3.87603 1.560529,-0.431 -0.995276,-3.84879 z"
          id="path21068"
@@ -1340,9 +1346,11 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="js/handlebars-v4.7.8.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/customscripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
