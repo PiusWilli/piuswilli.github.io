@@ -5,6 +5,12 @@ window.addEventListener('DOMContentLoaded', event => {
     request.send(null)
     var pageData = JSON.parse(request.responseText);
 
+    // load and add map 
+    var mapRequest = new XMLHttpRequest();
+    mapRequest.open("GET", "data/chilbi-map.svg", false);
+    mapRequest.send(null)
+    document.getElementById('map-placeholder').innerHTML = mapRequest.responseText
+
     navigationTemplate = document.getElementById('navigation-template').innerHTML;
     var compiledNavigationTemplate = Handlebars.compile(navigationTemplate);
     var navigationHtml = compiledNavigationTemplate(pageData);
