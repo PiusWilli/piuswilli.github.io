@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="ja/fontawesome.all.js" crossorigin="anonymous"></script>
+        <script src="js/fontawesome-all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="css/montserrat.css" rel="stylesheet" type="text/css" />
         <link href="css/roboto.css" rel="stylesheet" type="text/css" />
@@ -17,9 +17,15 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/customstyles.css" rel="stylesheet" />
     </head>
-    <script id="test-template" type="text/x-handlebars-template">
-        <div class="masthead-subheading">{{title}}</div>
-      </script>
+
+    <script id="navigation-template" type="text/x-handlebars-template">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            {{#each navigation-itmes}}
+                <li class="nav-item"><a class="nav-link" href="{{link}}">{{text}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -29,22 +35,13 @@
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#festplan">Festplan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Vereine</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive"></div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Mir freued eus</div>
-                <div id="test-handlebarplaceholder"></div>
                 <div class="masthead-heading text-uppercase">Illnauer Chilbi 2025</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Vereine</a>
             </div>
