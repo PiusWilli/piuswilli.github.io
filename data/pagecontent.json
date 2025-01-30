@@ -15,6 +15,12 @@
         { "id":6, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg"}
     ],
     "team-members" : [
-        { "name": "Ueli Fürst", "position": "Präsident", "image-url": "assets/img/team/uelif.jpg"}
+        { "name": "Ueli Fürst", "position": "Präsident", "image-url": "assets/img/team/uelif.jpg"},
+        { "name": "Norbert Bossi", "position": "Sponsoring", "image-url": "assets/img/team/NorbertB.jpg"},
+        { "name": "Nick Hock", "position": "Administration teilnehmende Vereine", "image-url": "assets/img/team/NickH.png"},
+        { "name": "Eveline Meier", "position": "Finanzen", "image-url": "assets/img/team/EvelineM.png"},
+        { "name": "Demian Scherer", "position": "Marktfahrer / Website (Admin)", "image-url": "assets/img/team/DemianS.png"},
+        { "name": "Walti Schuler", "position": "Bau", "image-url": "assets/img/team/WaltiS.png"},
+        { "name": "Pius Willi", "position": "Website", "image-url": "assets/img/team/PiusW.png"}
     ]
 }
