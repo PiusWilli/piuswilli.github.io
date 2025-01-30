@@ -7,11 +7,11 @@
         { "link":"#contact" , "text": "Contact"}
     ],
     "clubs" : [
-        { "title": "Elternverein", "image-url": "assets/img/clubs/elternverein.jpg"},
-        { "title": "CEVI", "image-url": "assets/img/clubs/cevi.jpg"},
-        { "title": "EIE", "image-url": "assets/img/clubs/eie.jpg"},
-        { "title": "Illnauer Brauer", "image-url": "assets/img/clubs/brauer.jpg"},
-        { "title": "Fusballclub Effretikon", "image-url": "assets/img/clubs/FCE.jpg"},
-        { "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg"}
+        { "id":1, "title": "Elternverein", "image-url": "assets/img/clubs/elternverein.jpg"},
+        { "id":2, "title": "CEVI", "image-url": "assets/img/clubs/cevi.jpg"},
+        { "id":3, "title": "EIE", "image-url": "assets/img/clubs/eie.jpg"},
+        { "id":4, "title": "Illnauer Brauer", "image-url": "assets/img/clubs/brauer.jpg"},
+        { "id":5, "title": "Fusballclub Effretikon", "image-url": "assets/img/clubs/FCE.jpg"},
+        { "id":6, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg"}
     ]
 }
