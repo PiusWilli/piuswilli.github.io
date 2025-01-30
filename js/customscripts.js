@@ -11,6 +11,11 @@ window.addEventListener('DOMContentLoaded', event => {
     mapRequest.send(null)
     document.getElementById('map-placeholder').innerHTML = mapRequest.responseText
 
+    navigationTemplate = document.getElementById('clubs-template').innerHTML;
+    var compiledNavigationTemplate = Handlebars.compile(navigationTemplate);
+    var navigationHtml = compiledNavigationTemplate(pageData);
+    document.getElementById('clubs-placeholder').innerHTML = navigationHtml;
+
     navigationTemplate = document.getElementById('navigation-template').innerHTML;
     var compiledNavigationTemplate = Handlebars.compile(navigationTemplate);
     var navigationHtml = compiledNavigationTemplate(pageData);
