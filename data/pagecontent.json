@@ -1,7 +1,7 @@
 {
     "navigation-itmes" :[
         { "link":"#festplan" , "text": "Festplan"},
-        { "link":"#portfolio" , "text": "Vereine"},
+        { "link":"#clubs" , "text": "Vereine"},
         { "link":"#about" , "text": "About"},
         { "link":"#team" , "text": "Team"},
         { "link":"#contact" , "text": "Contact"}
