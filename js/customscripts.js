@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     renderTemplateToPlaceholder('clubs-template', 'clubs-placeholder', pageData);
     renderTemplateToPlaceholder('navigation-template', 'navbarResponsive', pageData);
+    renderTemplateToPlaceholder('team-template', 'team-placeholder', pageData);
     renderTemplateToPlaceholder('modal-template', 'modal-placeholder', pageData);
     
 });
