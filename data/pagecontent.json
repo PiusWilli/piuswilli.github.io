@@ -12,7 +12,9 @@
         { "id":3, "title": "EIE", "image-url": "assets/img/clubs/eie.jpg"},
         { "id":4, "title": "Illnauer Brauer", "image-url": "assets/img/clubs/brauer.jpg"},
         { "id":5, "title": "Fusballclub Effretikon", "image-url": "assets/img/clubs/FCE.jpg"},
-        { "id":6, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg"}
+        { "id":6, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg"},
+        { "id":7, "title": "Turner-Familie", "image-url": "assets/img/clubs/turnfamily.jpg"}
+
     ],
     "team-members" : [
         { "name": "Ueli Fürst", "position": "Präsident", "image-url": "assets/img/team/uelif.jpg"},
