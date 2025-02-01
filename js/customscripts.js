@@ -30,7 +30,7 @@ var renderTemplateToPlaceholder = function(tempalteElementName, palaceHolderElem
 
 var prepareSvgZoom = function() {
     var svg = d3.select("#map-container1 svg");
-    let myZoom = d3.zoom().on('zoom', handleZoom);
+    let myZoom = d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom);
 
     function handleZoom(e) {
         d3.select('#map-container1 svg g')
