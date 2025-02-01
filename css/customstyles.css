@@ -1,23 +1,48 @@
 
 svg, svg * {
-    pointer-events: none;
-  }
+  pointer-events: none;
+}
+
+svg .hovers path:hover{
+  visibility:visible;
+}
+
+svg .hovers  path{
+  visibility:hidden;
+  pointer-events:all;
+}
+
+svg .clubs path:hover{
+  fill:lightblue !important;
+}
+
+svg .clubs  path{
+  visibility:visible;
+  pointer-events:all;
+}
   
-  svg .hovers path:hover{
-    visibility:visible;
-  }
-  
-  svg .hovers  path{
-    visibility:hidden;
-    pointer-events:all;
-  }
-  
-  svg .clubs path:hover{
-    fill:lightblue !important;
-  }
-  
-  svg .clubs  path{
-    visibility:visible;
-    pointer-events:all;
-  }
-  
+
+
+#map-placeholder {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.map-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 0 0;
+    cursor: grab;
+    position: absolute;
+}
+svg {
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    touch-action: none;
+}
