@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', event => {
     d3.svg("/data/chilbi-map.svg").then(function(xml) {
         d3.select("#map-container1").node().appendChild(xml.documentElement);
         prepareSvgZoom();
-        initOpenModalOnClick();
+        initOpenModalOnClick(pageData.clubs);
     });
 
     // render placeholders
@@ -46,16 +46,19 @@ var prepareSvgZoom = function() {
 
 var setModalToggleAttributesOnElement = function(elementId, modalLink){
     var pathElementClub1 = document.getElementById(elementId);
-    pathElementClub1.setAttribute('clase', 'club-link');
+    pathElementClub1.setAttribute('class', 'club-link');
     pathElementClub1.setAttribute('data-bs-toggle', 'modal');
     pathElementClub1.setAttribute('href', modalLink);
 };
 
-var initOpenModalOnClick = function(){
-    setModalToggleAttributesOnElement('path1688', '#clubModal1');
-    setModalToggleAttributesOnElement('path21104', '#clubModal2');
-    setModalToggleAttributesOnElement('path21070', '#clubModal3');
-    setModalToggleAttributesOnElement('path21068', '#clubModal3');
-    setModalToggleAttributesOnElement('path21066', '#clubModal3');
-    setModalToggleAttributesOnElement('path21114', '#clubModal4');
+var initOpenModalOnClick = function(clubs){
+    if(clubs != null){
+        clubs.forEach(setMotalTogglesForClub);
+    }
+}
+
+function setMotalTogglesForClub(club){
+    if(club.svgPath != null){
+        club.svgPath.forEach((path) => setModalToggleAttributesOnElement(path, '#clubModal' + club.id));
+    }
 }
