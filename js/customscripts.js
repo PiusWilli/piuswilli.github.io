@@ -29,9 +29,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Touch pinch zoom
     let startDistance = 0;
+    let lastCenterX = 0;
+    let lastCenterY = 0;
     mapContainer.addEventListener("touchstart", (event) => {
         if (event.touches.length === 2) {
             startDistance = getDistance(event.touches[0], event.touches[1]);
+            let rect = mapContainer.getBoundingClientRect();
+            lastCenterX = (event.touches[0].pageX + event.touches[1].pageX) / 2 - rect.left;
+            lastCenterY = (event.touches[0].pageY + event.touches[1].pageY) / 2 - rect.top;
         } else if (event.touches.length === 1) {
             startX = event.touches[0].pageX - posX;
             startY = event.touches[0].pageY - posY;
@@ -51,11 +56,14 @@ window.addEventListener('DOMContentLoaded', event => {
             let centerX = (event.touches[0].pageX + event.touches[1].pageX) / 2 - rect.left;
             let centerY = (event.touches[0].pageY + event.touches[1].pageY) / 2 - rect.top;
             
-            posX -= centerX * (scaleFactor - 1);
-            posY -= centerY * (scaleFactor - 1);
+            posX -= (centerX - lastCenterX) * (scaleFactor - 1);
+            posY -= (centerY - lastCenterY) * (scaleFactor - 1);
+            
             scale = newScale;
             updateTransform();
             startDistance = newDistance;
+            lastCenterX = centerX;
+            lastCenterY = centerY;
         } else if (event.touches.length === 1 && isDragging) {
             posX = event.touches[0].pageX - startX;
             posY = event.touches[0].pageY - startY;
