@@ -5409,7 +5409,8 @@
          in="SourceGraphic"
          in2="comp1"
          id="feComposite1764" /></filter></defs><g
-     id="g1"><g
+     id="g1"
+     inkscape:label="scroll zoom group"><g
        inkscape:groupmode="layer"
        id="layer6"
        inkscape:label="area"
