@@ -1,29 +1,30 @@
-svg .hovers path:hover{
+#map-placeholder svg .hovers path:hover{
   visibility:visible;
 }
 
-svg .hovers  path{
+#map-placeholder svg .hovers  path{
   visibility:hidden;
   pointer-events:all;
 }
 
-svg .clubs path:hover{
+#map-placeholder svg .clubs path:hover{
   fill:lightblue !important;
 }
 
-svg .clubs  path{
+#map-placeholder svg .clubs  path{
   visibility:visible;
   pointer-events:all;
 }
 
-svg {
+#map-placeholder svg {
   max-width: 100%;
   max-height: 100%;
-
 }
-
 
 #map-placeholder {
   background-color:  rgba(248, 249, 250)
 }
 
+#map {
+  height: 600px;
+}
