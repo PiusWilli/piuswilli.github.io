@@ -7,22 +7,22 @@
         { "link":"#contact" , "text": "Contact"}
     ],
     "clubs" : [
-        { "id":1, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg", "svgPath":["club-1"]},
-         { "id":2, "title": "Verein Eagles Jungschar Illnau", "image-url": "assets/img/clubs/no-image.jpg", "svgPath":["club-2"]},
-        { "id":3, "title": "Schiesssportverein Illnau-Effretikon", "image-url": "assets/img/clubs/schiesssport.jpg", "svgPath":["club-3" ]},
-        { "id":4, "title": "Turnfamilie Illnau", "image-url": "assets/img/clubs/turnfamily.jpg", "svgPath":["club-4"]},
-        { "id":5, "title": "Veloclub Illnau", "image-url": "assets/img/clubs/no-image.jpg", "svgPath":["club-5"]},
-        { "id":6, "title": "Cevi Illnau-Weisslingen", "image-url": "assets/img/clubs/cevi.jpg", "svgPath":["club-6"]},
-        { "id":7, "title": "Verein Churzschluss Bier", "image-url": "assets/img/clubs/no-image.jpg", "svgPath":["club-7"]},
-        { "id":8, "title": "Stadt- & Stadtjugendmusik Illnau-Effretikon", "image-url": "assets/img/clubs/Jugendmusik.jpg", "svgPath":["club-8"]},
-        { "id":9, "title": "Männerchor Ottikon", "image-url": "assets/img/clubs/männerchor ottikon.jpg", "svgPath":["club-9"]},
-        { "id":10, "title": "Elternverein", "image-url": "assets/img/clubs/elternverein.jpg", "svgPath":["club-10"]},
-        { "id":11, "title": "ZO Pumas", "image-url": "assets/img/clubs/no-image.jpg", "svgPath":["club-11"]},
-        { "id":12, "title": "Illauer Brauer", "image-url": "assets/img/clubs/brauer.jpg", "svgPath":["club-12"]},
-        { "id":13, "title": "FC Effretikon", "image-url": "assets/img/clubs/FCE.jpg", "svgPath":["club-13"]},
-        { "id":14, "title": "Handharmonikaclub Illnau-Effretikon", "image-url": "assets/img/clubs/harmonika.jpg", "svgPath":["club-14"]},
-        { "id":15, "title": "Pfadi Illnau-Effretikon / Lindau", "image-url": "assets/img/clubs/pfadi.jpg", "svgPath":["club-15"]},
-        { "id":16, "title": "EIE", "image-url": "assets/img/clubs/eie.jpg", "svgPath":["club-16-1","club-16-2","club-16-3"]}
+        { "id":1, "title": "Frauenchor Illnau", "image-url": "assets/img/clubs/frauenchorIllnau.jpg", "svgPath":["club-1"], "description": "Wir sind 26 Frauen aus Illnau und Umgebung und singen unter der musikalischen Leitung von Andreas J. Baumberger.<BR>Wir lieben die Abwechslung und die Vielfalt an Musikstilen aus allen Epochen. Singen verbindet - so treffen wir uns auch zu anderen Gelegenheiten.<BR>Chorproben: Wöchentlich am Dienstag um 19.30h.<BR>Im Singsaal des Oberstufenschulhauses Hagen in Illnau."},
+         { "id":2, "title": "Verein Eagles Jungschar Illnau", "image-url": "assets/img/clubs/eagles.jpg", "svgPath":["club-2"], "description": "todo"},
+        { "id":3, "title": "Schiesssportverein Illnau-Effretikon", "image-url": "assets/img/clubs/schiesssport.jpg", "svgPath":["club-3" ], "description": "todo"},
+        { "id":4, "title": "Turnfamilie Illnau", "image-url": "assets/img/clubs/turnfamily.jpg", "svgPath":["club-4"], "description": "todo"},
+        { "id":5, "title": "Veloclub Illnau", "image-url": "assets/img/clubs/velo.jpg", "svgPath":["club-5"], "description": "todo"},
+        { "id":6, "title": "Cevi Illnau-Weisslingen", "image-url": "assets/img/clubs/cevi.jpg", "svgPath":["club-6"], "description": "todo"},
+        { "id":7, "title": "Verein Churzschluss Bier", "image-url": "assets/img/clubs/churzschluss.jpg", "svgPath":["club-7"], "description": "todo"},
+        { "id":8, "title": "Stadt- & Stadtjugendmusik Illnau-Effretikon", "image-url": "assets/img/clubs/Jugendmusik.jpg", "svgPath":["club-8"], "description": "todo"},
+        { "id":9, "title": "Männerchor Ottikon", "image-url": "assets/img/clubs/männerchor ottikon.jpg", "svgPath":["club-9"], "description": "todo"},
+        { "id":10, "title": "Elternverein", "image-url": "assets/img/clubs/elternverein.jpg", "svgPath":["club-10"], "description": "todo"},
+        { "id":11, "title": "ZO Pumas", "image-url": "assets/img/clubs/zopumas.jpg", "svgPath":["club-11"], "description": "todo"},
+        { "id":12, "title": "Illauer Brauer", "image-url": "assets/img/clubs/brauer.jpg", "svgPath":["club-12"], "description": "todo"},
+        { "id":13, "title": "FC Effretikon", "image-url": "assets/img/clubs/FCE.jpg", "svgPath":["club-13"], "description": "todo"},
+        { "id":14, "title": "Handharmonikaclub Illnau-Effretikon", "image-url": "assets/img/clubs/harmonika.jpg", "svgPath":["club-14"], "description": "todo"},
+        { "id":15, "title": "Pfadi Illnau-Effretikon / Lindau", "image-url": "assets/img/clubs/pfadi.jpg", "svgPath":["club-15"], "description": "todo"},
+        { "id":16, "title": "EIE", "image-url": "assets/img/clubs/eie.jpg", "svgPath":["club-16-1","club-16-2","club-16-3"], "description": "todo"}
 
     ],
     "team-members" : [
