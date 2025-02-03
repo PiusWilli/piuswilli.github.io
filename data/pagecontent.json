@@ -179,31 +179,31 @@
         }
     ],
     "schedule":{
-        "description":"Lorem ipsum dolor sit amet consectetur.",
+        "description":"ÖFFNUNGSZEITEN:<br/>Freitag 17.00-02.00 Uhr<br/>Samstag 13.00-03.00 Uhr<br/>Sonntag 11.30-20.00 Uhr",
         "entries":[
             {
-                "title":"So. 11:00",
-                "sub-title": "De gschnällscht Illauer",
-                "decription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+                "title":"Fr. 17:00-17:30",
+                "sub-title": "Gratis Lunapark",
+                "decription": "auf allen Fahrgeschäften",
                 "image-url":"assets/img/about/1.jpg"
             },
             {
-                "title":"So. 13:00",
-                "sub-title": "Konzert - Stadtmusik Illnau Effretikon",
-                "decription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+                "title":"Sa. 23:00",
+                "sub-title": "Feuerwerk",
+                "decription": "über dem Horn",
+                "image-url":"assets/img/about/4.jpg"
+            },
+            {
+                "title":"So. 10:30",
+                "sub-title": "Festgottesdienst",
+                "decription": "",
                 "image-url":"assets/img/about/2.jpg"
             },
             {
-                "title":"Sa. 10:00",
-                "sub-title": "Konzert - Jugendmusik",
-                "decription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+                "title":"So. 13:30",
+                "sub-title": "«de gschnällscht Illauer»",
+                "decription": "hinter dem Feuerwehrgebäude",
                 "image-url":"assets/img/about/3.jpg"
-            },
-            {
-                "title":"Sa. 23:00",
-                "sub-title": "Feuerwerk über dem Horn",
-                "decription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-                "image-url":"assets/img/about/4.jpg"
             }
         ]
     },

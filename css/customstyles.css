@@ -28,3 +28,7 @@
 #map {
   height: 600px;
 }
+
+#schedule-placeholder .section-subheading{
+  padding-bottom: 30px;
+}
