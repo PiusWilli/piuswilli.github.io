@@ -111,16 +111,66 @@
     </script>
 
     <script id="team-template" type="text/x-handlebars-template">
-        {{#each team.team-members}}
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{{image-url}}" alt="..." />
-                    <h4>{{name}}</h4>
-                    <p class="text-muted">{{position}}</p>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Unser Chilbi Team</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="row">
+                {{#each team-members}}
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{image-url}}" alt="..." />
+                            <h4>{{name}}</h4>
+                            <p class="text-muted">{{position}}</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">
+                        {{{description}}}
+                    </p>
                 </div>
             </div>
-        {{/each}}
+        </div>
     </script>
+
+    <script id="schedule-template" type="text/x-handlebars-template">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Festprogramm</h2>
+                <h3 class="section-subheading text-muted">{{description}}</h3>
+            </div>
+            <ul class="timeline">
+                {{#each entries}}
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{image-url}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{{title}}</h4>
+                                <h4 class="subheading">{{sub-title}}</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">{{{decription}}}</p></div>
+                        </div>
+                    </li>
+                {{/each}}
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Und
+                            <br />
+                            vieles
+                            <br />
+                            mehr!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </script>
+
 
     <body id="page-top">
         <!-- Navigation-->
@@ -183,84 +233,10 @@
             </div>
         </section>
         <!-- Schedule-->
-        <section class="page-section" id="schedule">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Festprogramm</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>So. 11:00</h4>
-                                <h4 class="subheading">De gschnällscht Illauer</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>So. 13:00</h4>
-                                <h4 class="subheading">Konzert - Stadtmusik Illnau Effretikon</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Sa. 10:00</h4>
-                                <h4 class="subheading">Konzert - Jugendmusik</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Sa. 23:00</h4>
-                                <h4 class="subheading">Feuerwerk über dem Horn</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Und
-                                <br />
-                                vieles
-                                <br />
-                                mehr!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <section class="page-section" id="schedule-placeholder">
         </section>
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Unser Chilbi Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row" id="team-placeholder">
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Unser motiviertes Chilbikomitee besteht zur Zeit aus 6 Personen.
-                        <br>
-                        Wir sind stets bestrebt, einen möglichst reibungslosen Ablauf der Illnauer Dorfchilbi zu gewährleisten.
-                        Falls trotzdem Fragen bestehen, etwas geklärt werden soll oder konstruktive Verbesserungsvorschläge zu uns gelangen sollen, können Sie sich gerne per Mail an
-                        info@dorfchilbi-illnau.ch oder mittels untenstehendem Formular bei uns melden.</p></div>
-                </div>
-            </div>
+        <section class="page-section bg-light" id="team-placeholder">
         </section>
         <!-- Contact-->
         <section class="page-section" id="contact">

@@ -15,8 +15,9 @@ window.addEventListener('DOMContentLoaded', event => {
     // render placeholders
     renderTemplateToPlaceholder('clubs-template', 'clubs-placeholder', pageData);
     renderTemplateToPlaceholder('navigation-template', 'navbarResponsive', pageData);
-    renderTemplateToPlaceholder('team-template', 'team-placeholder', pageData);
+    renderTemplateToPlaceholder('team-template', 'team-placeholder', pageData.team);
     renderTemplateToPlaceholder('modal-template', 'modal-placeholder', pageData);
+    renderTemplateToPlaceholder('schedule-template', 'schedule-placeholder', pageData.schedule);
 });
 
 var renderTemplateToPlaceholder = function(tempalteElementName, palaceHolderElementId, data)
