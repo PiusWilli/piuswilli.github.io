@@ -9,11 +9,11 @@
             "text": "Vereine"
         },
         {
-            "link": "#schedule",
+            "link": "#schedule-placeholder",
             "text": "Festprogramm"
         },
         {
-            "link": "#team",
+            "link": "#team-placeholder",
             "text": "Team"
         }
     ],
