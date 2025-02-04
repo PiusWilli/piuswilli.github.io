@@ -185,7 +185,25 @@
                 "title": "Fr. 17:00-17:30",
                 "sub-title": "Gratis Lunapark",
                 "decription": "auf allen Fahrgeschäften",
-                "image-url": "assets/img/about/1.jpg"
+                "image-url": "assets/img/schedule/chilbi.jpg"
+            },
+            {
+                "title": "Fr. 21:00-23:00",
+                "sub-title": "Livemusik mit Quantum<br/>ab 23:00 Uhr DJ",
+                "decription": "auf der <strong>Landirampe</strong><br/>gesponsert von ZO Pumas und Elternverein Illnau",
+                "image-url": "assets/img/schedule/speaker.jpg"
+            },
+            {
+                "title": "Sa. 15:00-16:00",
+                "sub-title": "Tanzen und Singen mit Tante Carmen (Carmen Lopes Sway)",
+                "decription": "auf der <strong>Landirampe</strong><br/>gesponsert von Kiwanis Illnau-Effretikon",
+                "image-url": "assets/img/schedule/music.jpg"
+            },
+            {
+                "title": "Sa. 21:00 bis 01:00",
+                "sub-title": "Livemusik mit Fine Taste",
+                "decription": "auf der <strong>Landirampe</strong><br/>gesponsert von ZO Puma und Elternverein Illnau",
+                "image-url": "assets/img/schedule/finetaste.jpg"
             },
             {
                 "title": "Sa. 23:00",
@@ -197,13 +215,19 @@
                 "title": "So. 10:30",
                 "sub-title": "Festgottesdienst",
                 "decription": "",
-                "image-url": "assets/img/about/2.jpg"
+                "image-url": "assets/img/schedule/cross.jpg"
             },
             {
                 "title": "So. 13:30",
                 "sub-title": "«de gschnällscht Illauer»",
                 "decription": "hinter dem Feuerwehrgebäude",
                 "image-url": "assets/img/schedule/gschnaelschtIllauer.jpg"
+            },
+            {
+                "title": "So. 15:00 bis 16:00",
+                "sub-title": "Rangverkündigung «de gschnällscht Illauer»",
+                "decription": "auf der <strong>Landirampe</strong><br/>gesponsert von Satmultimedia Scherer",
+                "image-url": "assets/img/schedule/gschnaelschtIllauerwinner.jpg"
             }
         ]
     },
