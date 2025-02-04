@@ -179,31 +179,31 @@
         }
     ],
     "schedule":{
-        "description":"ÖFFNUNGSZEITEN:<br/>Freitag 17.00-02.00 Uhr<br/>Samstag 13.00-03.00 Uhr<br/>Sonntag 11.30-20.00 Uhr",
+        "description": "ÖFFNUNGSZEITEN:<br/>Freitag 17.00-02.00 Uhr<br/>Samstag 13.00-03.00 Uhr<br/>Sonntag 11.30-20.00 Uhr",
         "entries":[
             {
-                "title":"Fr. 17:00-17:30",
+                "title": "Fr. 17:00-17:30",
                 "sub-title": "Gratis Lunapark",
                 "decription": "auf allen Fahrgeschäften",
-                "image-url":"assets/img/about/1.jpg"
+                "image-url": "assets/img/about/1.jpg"
             },
             {
-                "title":"Sa. 23:00",
+                "title": "Sa. 23:00",
                 "sub-title": "Feuerwerk",
                 "decription": "über dem Horn",
-                "image-url":"assets/img/about/4.jpg"
+                "image-url": "assets/img/about/4.jpg"
             },
             {
-                "title":"So. 10:30",
+                "title": "So. 10:30",
                 "sub-title": "Festgottesdienst",
                 "decription": "",
-                "image-url":"assets/img/about/2.jpg"
+                "image-url": "assets/img/about/2.jpg"
             },
             {
-                "title":"So. 13:30",
+                "title": "So. 13:30",
                 "sub-title": "«de gschnällscht Illauer»",
                 "decription": "hinter dem Feuerwehrgebäude",
-                "image-url":"assets/img/about/3.jpg"
+                "image-url": "assets/img/schedule/gschnaelschtIllauer.jpg"
             }
         ]
     },
