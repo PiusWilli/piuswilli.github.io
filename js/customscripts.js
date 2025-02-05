@@ -44,6 +44,10 @@ var prepareSvgZoom = function() {
     initZoom();
 };
 
+var resetSvgZoom = function(){
+    d3.select('#map-container1 svg g').attr('transform', null);
+}
+
 var setModalToggleAttributesOnElement = function(elementId, modalLink){
     var pathElementClub1 = document.getElementById(elementId);
     pathElementClub1.setAttribute('class', 'club-link');
@@ -61,4 +65,21 @@ function setMotalTogglesForClub(club){
     if(club.svgPath != null){
         club.svgPath.forEach((path) => setModalToggleAttributesOnElement(path, '#clubModal' + club.id));
     }
+}
+
+function blink(elementId){
+    var element = document.getElementById(elementId);
+    element.classList.add("spinner-grow");
+    setTimeout(function(){element.classList.remove("spinner-grow");},3000);
+}
+
+function scrollTo(elementId){
+    var element = document.getElementById(elementId);
+    element.scrollIntoView();
+}
+
+function highlightSvgElement(elementId){
+    resetSvgZoom();
+    scrollTo("map-placeholder");
+    blink("elementId");
 }
