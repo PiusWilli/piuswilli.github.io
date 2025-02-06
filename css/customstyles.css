@@ -37,6 +37,10 @@
   filter: saturate(0);
 }
 
+.img-brand:hover {
+  filter: saturate(1);
+}
+
 @media only screen and (max-width: 600px) {
   .img-brand {
     filter: saturate(1);
