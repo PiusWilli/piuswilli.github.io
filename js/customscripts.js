@@ -33,7 +33,7 @@ var prepareSvgZoom = function() {
     let myZoom = d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom);
 
     function handleZoom(e) {
-        d3.select('#map-container1 svg g')
+        d3.select('#map-container1 svg #g1')
             .attr('transform', e.transform);
     }
 
