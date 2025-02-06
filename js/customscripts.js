@@ -85,8 +85,6 @@ function highlightSvgElement(elementId){
 }
 
 document.addEventListener('click', function (event) {
-
-	// If the clicked element doesn't have the right selector, bail
 	if (!event.target.matches('.show-on-map')) return;
 
     var clubId = event.target.getAttribute('club-id');
