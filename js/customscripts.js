@@ -81,5 +81,18 @@ function scrollTo(elementId){
 function highlightSvgElement(elementId){
     resetSvgZoom();
     scrollTo("map-placeholder");
-    blink("elementId");
+    blink(elementId);
 }
+
+document.addEventListener('click', function (event) {
+
+	// If the clicked element doesn't have the right selector, bail
+	if (!event.target.matches('.show-on-map')) return;
+
+    var clubId = event.target.getAttribute('club-id');
+    highlightSvgElement('pin-' + clubId);
+    // Don't follow the link
+	event.preventDefault();
+    if(event.stopPropagation) event.stopPropagation();
+
+}, false);
