@@ -37,11 +37,14 @@ var prepareSvgZoom = function() {
 
     var svg = d3.select("#map-container1 svg");
     svg.call(d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom));
-    
 };
 
 var resetSvgZoom = function(){
     d3.select('#map-container1 svg #g1').attr('transform', null);
+    var zoom = d3.zoom();
+    var svg = d3.select('#map-container1 svg');
+    zoom.scaleTo(svg,1);
+    zoom.translateTo(svg, 400, 350); 
 }
 
 var setModalToggleAttributesOnElement = function(elementId, modalLink){
