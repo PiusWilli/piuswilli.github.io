@@ -29,23 +29,19 @@ var renderTemplateToPlaceholder = function(tempalteElementName, palaceHolderElem
 };
 
 var prepareSvgZoom = function() {
-    var svg = d3.select("#map-container1 svg");
-    let myZoom = d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom);
 
     function handleZoom(e) {
         d3.select('#map-container1 svg #g1')
             .attr('transform', e.transform);
     }
 
-    function initZoom() {
-        d3.select('#map-container1 svg').call(myZoom);
-    }
-
-    initZoom();
+    var svg = d3.select("#map-container1 svg");
+    svg.call(d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom));
+    
 };
 
 var resetSvgZoom = function(){
-    d3.select('#map-container1 svg g').attr('transform', null);
+    d3.select('#map-container1 svg #g1').attr('transform', null);
 }
 
 var setModalToggleAttributesOnElement = function(elementId, modalLink){
