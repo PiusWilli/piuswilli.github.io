@@ -41,19 +41,22 @@
   filter: saturate(1);
 }
 
-svg g .dimmed{
-  filter: saturate(0);
-}
-
-svg g .dimmed.spinner-grow{
-  filter: saturate(1);
-}
-
 @media only screen and (max-width: 600px) {
   .img-brand {
     filter: saturate(1);
   }
 }
+
+svg g .dimmed{
+  filter: saturate(0);
+  -webkit-filter: saturate(0);
+}
+
+svg g .dimmed.spinner-grow{
+  filter: saturate(1);
+  -webkit-filter: saturate(1);
+}
+
 
 @keyframes spinner-grow {
   0% {
