@@ -84,14 +84,3 @@ function highlightSvgElement(elementId){
     scrollTo("map-placeholder");
     blink(elementId);
 }
-
-document.addEventListener('click', function (event) {
-	if (!event.target.matches('.show-on-map')) return;
-
-    var clubId = event.target.getAttribute('club-id');
-    highlightSvgElement('pin-' + clubId);
-    // Don't follow the link
-	event.preventDefault();
-    if(event.stopPropagation) event.stopPropagation();
-
-}, false);
