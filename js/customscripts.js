@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // load and add map 
     d3.svg("/data/chilbi-map.svg").then((xml) => {
         d3.select("#map-container1").node().appendChild(xml.documentElement);
-        prepareSvgZoom();
-        initOpenModalOnClick(pageData.clubs);
+        initMapZoom();
+        initModalToggles(pageData.clubs);
     });
 
     // render placeholders
@@ -19,16 +19,25 @@ window.addEventListener('DOMContentLoaded', () => {
     renderTemplateToPlaceholder('schedule-template', 'schedule-placeholder', pageData.schedule);
 });
 
-function prepareSvgZoom() {
+function initMapZoom() {
     function handleZoom(e) {
         d3.select('#map-container1 svg #g1')
             .attr('transform', e.transform);
     }
     var svg = d3.select("#map-container1 svg");
-    svg.call(d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom));
+    var zoom = d3.zoom().scaleExtent([0.8, 5]).on('zoom', handleZoom);
+    svg.call(zoom);
+
+    d3.select("#zoom_in").on("click", function() {
+        zoom.scaleBy(svg.transition().duration(100), 1.2);
+    });
+    d3.select("#zoom_out").on("click", function() {
+        zoom.scaleBy(svg.transition().duration(100), 0.8);
+    });
 };
 
-function initOpenModalOnClick(clubs) {
+
+function initModalToggles(clubs) {
     if (clubs != null) {
         clubs.forEach((club) => {
             if (club.svgPath != null) {
