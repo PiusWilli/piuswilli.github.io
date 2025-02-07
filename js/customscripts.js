@@ -48,10 +48,10 @@ var resetSvgZoom = function(){
 }
 
 var setModalToggleAttributesOnElement = function(elementId, modalLink){
-    var pathElementClub1 = document.getElementById(elementId);
-    pathElementClub1.setAttribute('class', 'club-link club-pin');
-    pathElementClub1.setAttribute('data-bs-toggle', 'modal');
-    pathElementClub1.setAttribute('href', modalLink);
+    var pathElementClub1 = d3.select("#" + elementId);
+    pathElementClub1.classed('club-link');
+    pathElementClub1.attr('data-bs-toggle', 'modal');
+    pathElementClub1.attr('href', modalLink);
 };
 
 var initOpenModalOnClick = function(clubs){
@@ -68,9 +68,10 @@ function setMotalTogglesForClub(club){
 
 function blink(elementId){
     var element = d3.select("#" + elementId);
+    var otherPins = d3.selectAll('.club-pin').filter(function() { return this.id !== ("#" + elementId); });
+    otherPins.transition().duration(900).style("opacity", "0");
     element.classed("spinner-grow", true);
-    d3.selectAll('.club-pin').classed('dimmed', true);
-    setTimeout(function(){element.classed("spinner-grow", false);  d3.selectAll('.club-pin').classed('dimmed', false);},3000);
+    setTimeout(function(){element.classed("spinner-grow", false);  otherPins.transition().duration(800).style("opacity", "100");},3000);
 }
 
 function scrollTo(elementId){
